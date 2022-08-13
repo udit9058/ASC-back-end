@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASC</title>
+    <!-- CSS only -->
+    <!-- <?php
+    include 'connection.php';
+    ?> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>ASC Form</h1>
+
+        <form action="new.php" method="post">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email_address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="enter email">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example_textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="password" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+        </form>
+    </div>
+
+ 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
