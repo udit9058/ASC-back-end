@@ -12,16 +12,13 @@ if($conn->connect_error){
 
 $userName = $_POST["userName"];
 $password = $_POST['password'];
-$universityName = $_POST['universityName'];
-$stateName = $_POST['state'];
 $email = $_POST['email'];
 
-    $sql = "INSERT INTO signup_university (user_name, password,university_name,state_name,email_id)
-VALUES ('$userName', '$password','$universityName','$stateName','$email')";
+    $sql = "INSERT INTO signip_experts (username, password,email)
+VALUES ('$userName', '$password','$email')";
 
 if ($conn->query($sql) === TRUE) {
 echo "New record created successfully";
-header("Location: http://localhost/ASC-full-app/login_university.html");
 } else {
 echo "Error: " . $sql . "<br>" . $conn->error;
 }
