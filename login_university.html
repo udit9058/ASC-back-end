@@ -52,15 +52,24 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="password" required>
 
-        <button type="submit">Login</button>
+        
+        <button onclick="myFunction()" type="submit">Login</button>
 
       </div>
     </form>
   </div>
+
+  <script>
+    function myFunction() {
+      alert("You Succesfully LogIn");
+    }
+  </script>
+    
+
 </body>
 <style>
   /* For Centered SignIn Button */
-  /* div.Button3 {
+   div.Button3 {
       position: absolute;
       top: 325px;
       left: 625px;
@@ -74,7 +83,7 @@
       color: black;
     }
 
-    SIGN UP AS UNIVERSITY BUTTON*/
+    /*SIGN UP AS UNIVERSITY BUTTON*/
   /* .button4 {
       position: absolute;
       bottom: 180px;

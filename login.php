@@ -40,7 +40,17 @@ if (mysqli_num_rows($result) === 1) {
     }     
     
 }else{
-    echo "Login failed";
+    $row = mysqli_fetch_assoc($result);
+
+    if ($row['email'] === $email && $row['password'] === $password) {
+
+        echo "Logged in!";
+
+        $_SESSION['email'] = $row['email'];
+
+        $_SESSION['id'] = $row['id'];
+
+        exit();
     exit();
 
 }
