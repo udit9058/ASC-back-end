@@ -13,8 +13,8 @@ if($conn->connect_error){
 $university = $_POST["university"];
 $program = $_POST["program"];
 $branch = $_POST["branch"];
-$semester = $POST["semester"];
-$subject = $POST["subject"];
+$semester = $_POST["semester"];
+$subject = $_POST["subject"];
 
 
 // $password = $_POST['password'];
@@ -25,6 +25,7 @@ VALUES ('$university', '$program','$branch','$semester','$subject')";
 
 if ($conn->query($sql) === TRUE) {
 echo "New record created successfully";
+header("Location: http://localhost/ASC-full-app/Discussion_university.html")
 } else {
 echo "Error: " . $sql . "<br>" . $conn->error;
 }
