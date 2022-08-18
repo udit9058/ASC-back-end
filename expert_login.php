@@ -37,7 +37,8 @@ if (mysqli_num_rows($result) === 1) {
     }     
     
 }else{
-    echo "Login failed";
+    header("Location: http://localhost/ASC-full-app/home3.html");
+    //echo "Login failed";
     exit();
 
 }

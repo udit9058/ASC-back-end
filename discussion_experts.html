@@ -49,10 +49,10 @@
 
   <div class="container">
     <br>
-    <h1><b>Upload curriculum</b></h1>
+    <h1><b>Please select curriculum</b></h1>
     <hr>
     <h3><b>Filter:</p></b></h3>
-    <form name="form1" id="form1" action="Discussion_university.php" method="POST" enctype="multipart/form-data">
+    <form name="form1" id="form1" action="Discussion_experts.php" method="POST" enctype="multipart/form-data">
 
       <b>UNIVERSITY: <select name="university" id="subject">
           <option value="" selected="selected">Select University</option>
@@ -95,27 +95,44 @@
       <!-- <label for="myfile">Select a file:</label>
       <input type="file" id="myfile" name="myfile"> -->
       <br>
-      <p><b>
-          Please upload only pdf files
+       <p><b>
+          Please give rating out of 10
         </b>
       </p>
+      Rating: <select name="rating">
+        <option value="" selected="selected">Please select rating score</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+    </select>
+      <!--
       <div class="container">
         <input type="file" name="pdf_file" class="form-control" accept=".pdf" title="Upload PDF" />
       </div>
       <br>
       <div class="container">
         <input type="submit" class="btnRegister" name="submit" value="Submit" onclick="myFunction()">
+      </div> -->
+      <br>
+      <br>
+      <div class="container">
+        <input type="submit" class="btnRegister" name="submit" value="Submit" onclick="myFunction()">
       </div>
-
-      <!-- <input type="submit" value="upload"> -->
     </form>
   </div>
 
   <script>
     function myFunction() {
-      alert("You Succesfully uploaded want to continue ");
+      alert("You Succesfully rated the curriculum now you can rate another curriculum ");
     }
-  </script>
+  </script> -->
 
 </body>
 
