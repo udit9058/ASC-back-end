@@ -25,8 +25,8 @@ VALUES ('$university', '$program','$branch','$semester','$subject')";
 
 if ($conn->query($sql) === TRUE) {
 echo "New record created successfully";
-header("Location: http://localhost/ASC-full-app/Discussion_university.html")
-} else {
+header("Location: http://localhost/ASC-full-app/Discussion_university.html");
+}else{
 echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
